@@ -1,0 +1,15 @@
+body{
+  text-align: center;
+  background-color: rgb(164, 168, 202);
+
+}
+form{
+  margin: 20px;
+  
+}
+input{
+  background-color: rgb(220, 26, 26);
+}
+h1 {
+  text-align: center;
+}

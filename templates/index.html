@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Counter App</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Counter </h1>
+    <h1>{{ visits }} time</h1>
+    <form method="POST" action="/increment">
+        <input type="submit" value="Add two visits!">
+    </form>
+    <form method="POST" action="/reset">
+        <input type="submit" value="Reset">
+    </form>
+    <form method="POST" action="/custom_increment">
+        <input type="text" name="increment_value" placeholder="Custom Increment">
+        <input type="submit" value="Add Number to increment">
+    </form>
+
+    <a href="/destroy_session">Destroy Session</a>
+</body>
+</html>
